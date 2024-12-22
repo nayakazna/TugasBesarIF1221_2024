@@ -65,6 +65,7 @@ help :-
     printBold('pasangTrap'), write(' - Memasang trap.'), nl,
     printBold('investasi'), write(' - Melakukan investasi.'), nl,
     printBold('papanInvestasi'), write(' - Melihat daftar investasi.'), nl,
+    printBold('jalankanUnta'), write(' - Mengocok dadu dan menjalankan unta dengan warna dan angka yang sesuai.'), nl,
     printBold('nextGiliran'), write(' - Melanjutkan ke giliran pemain berikutnya.'), nl.
 
 %%%%%%%%%%%%%%%% PEMAIN MANAGEMENT
