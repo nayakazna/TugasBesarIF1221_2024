@@ -9,8 +9,12 @@ nextGiliran :-
     clearScreen,
     % Hapus fakta terkait giliran
     retract(giliran(_)),
-    retract(giliranBeres),
-
+    (
+        giliranBeres -> 
+        retract(giliranBeres)
+    ;   true
+    ),
+    
     % Ambil ID pemain selanjutnya
     remaining_ids(IDs),
     rotateLeft(IDs, NewIDs),

@@ -118,8 +118,7 @@ jalankanUnta :-
     retract(peta(_)),
     assertz(peta(NewMapBaru)),
     (
-        IndeksSangatBaru = 0 -> printHijau('Unta udah nyampe di finish, rek!'), nl,
-        finishGame
+        IndeksSangatBaru = 0 -> printHijau('Unta udah nyampe di finish, rek!'), nl
         ;   write(''), nl
         ),
     (

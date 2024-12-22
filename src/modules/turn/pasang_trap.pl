@@ -41,7 +41,7 @@ pasangTrap :-
                         
                         % Konpirmasi
                         clearScreen,
-                        printHijau('Trap'), printHijau(JenisTrap), printHijau('berhasil dipasang di petak'), printHijau(KodePetak), printHijau(', cik!'), nl,
+                        printHijau('Trap '), printHijau(JenisTrap), printHijau(' berhasil dipasang di petak '), printHijau(KodePetak), printHijau(', cik!'), nl,
                         katakanPeta,
                         asserta(giliranBeres)
                     )

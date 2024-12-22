@@ -97,11 +97,7 @@ calculateInvestasiPoints :-
                         (hijau, []),
                         (biru, [])]
         -> write('Tidak ada investasi yang dilakukan.'), nl
-        ;   % write('Calculating points...'), nl,
-            % write('Rankings: '), write(RankingsUnta), nl,
-            % write('Players: '), write(Players), nl,
-            write('Investments: '), write(ListInvestasi), nl,
-            calculateInvestasiPointsHelper(ListInvestasi)
+        ;   papanInvestasi
         ).
 
 calculateInvestasiPointsHelper([]).
