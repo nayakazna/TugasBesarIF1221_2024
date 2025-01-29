@@ -16,6 +16,10 @@ dadu_faces([1, 2, 3, 4, 5, 6]).
 :- dynamic(remaining_dadu_colors/1).
 :- dynamic(peta/1).
 :- dynamic(gameMulai/0).
+:- dynamic(unta_disembunyikan/0).
+:- dynamic(kode_disembunyikan/1).
+:- dynamic(stack_disembunyikan/1).
+:- dynamic(idx_disembunyikan/1).
 
 % Memuat modul .pl lain yang sudah dibikin dengan jerih payah T_T
 :- include('src/modules/utils/list.pl').
@@ -27,6 +31,8 @@ dadu_faces([1, 2, 3, 4, 5, 6]).
 :- include('src/modules/turn/cek_info.pl').
 :- include('src/modules/turn/display_map.pl').
 :- include('src/modules/turn/jalankan_unta.pl').
+:- include('src/modules/bonus/sembunyikan_unta.pl').
+:- include('src/modules/bonus/tukar_unta.pl').
 :- include('src/modules/turn/pasang_trap.pl').
 :- include('src/modules/turn/investasi.pl').
 :- include('src/modules/endgame.pl').
