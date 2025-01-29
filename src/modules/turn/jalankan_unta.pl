@@ -66,7 +66,14 @@ jalankanUnta :-
     NewPoin is Poin + 10,
     retract(pemain(CurrentPemainID, _, Poin, _, _)),
     asserta(pemain(CurrentPemainID, Nama, NewPoin, Kartu, Trap)),
-
+    
+    % Kalau unta disembunyikan, kembalikan unta
+    (
+        unta_disembunyikan -> 
+        kembalikanUnta
+    ;   true
+    ),
+    
     % Update giliran
     asserta(giliranBeres),
     % cetakTest,

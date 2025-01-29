@@ -7,6 +7,12 @@ setGiliran :-
 
 nextGiliran :-
     clearScreen,
+    % Kalau unta disembunyikan, kembalikan unta
+    (
+        unta_disembunyikan -> 
+        kembalikanUnta
+    ;   true
+    ),
     % Hapus fakta terkait giliran
     retract(giliran(_)),
     (

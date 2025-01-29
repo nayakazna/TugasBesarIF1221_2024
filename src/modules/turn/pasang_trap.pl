@@ -43,7 +43,13 @@ pasangTrap :-
                         clearScreen,
                         printHijau('Trap '), printHijau(JenisTrap), printHijau(' berhasil dipasang di petak '), printHijau(KodePetak), printHijau(', cik!'), nl,
                         katakanPeta,
-                        asserta(giliranBeres)
+                        asserta(giliranBeres),
+                        % Kalau unta disembunyikan, kembalikan unta
+                        (
+                            unta_disembunyikan -> 
+                            kembalikanUnta
+                        ;   true
+                        )
                     )
                 ;   printMerah('Gak usah ngadi-ngadi! Jenis trap cuma maju atau mundur.'), nl
                 )

@@ -27,6 +27,13 @@ investasi :-
                     validasi_investasi(Warna, IDPemain) 
                 ->  lakukan_investasi(Warna, IDPemain),
                     printHijau('Investasi berhasil!'),
+                    
+                    % Kalau unta disembunyikan, kembalikan unta
+                    (
+                        unta_disembunyikan -> 
+                        kembalikanUnta
+                    ;   true
+                    ),
                     asserta(giliranBeres)
                 ;   printMerah('Gagal melakukan investasi.')
                 )
