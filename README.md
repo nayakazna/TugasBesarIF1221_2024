@@ -27,10 +27,19 @@ Kemudian, salin repositori ini dengan menjalankan perintah
 git clone https://github.com/praktikum-if1221-logika-komputasional/praktikum-if1221-logika-komputasional-piton-24-aseli-ngawi.git
 ```
 
-Pada konsol GNU Prolog, ganti direktori kerja (_working directory_) menuju folder repositori ini dengan `cd path/ke/repo`. Selanjutnya, jalankan program utama dengan perintah
+# Penggunaan
 
+Ganti direktori kerja (_working directory_) menuju folder repositori ini dengan `cd path/ke/repo`. Selanjutnya, jalankan program utama dengan membuka GNU Prolog
+```bash
+gprolog --consult-file src/main.pl
 ```
-['src/main.pl'].
+
+Silakan masukkan perintah help untuk melihat daftar perintah yang dapat digunakan. 
+
+```prolog
+?- help.
 ```
+
+Selamat bermain!
 
 ![tada!](image.png)
